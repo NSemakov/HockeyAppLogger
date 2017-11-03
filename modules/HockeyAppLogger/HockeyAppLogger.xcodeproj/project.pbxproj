@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		260D87DE1FACD38900AA9FEF /* LogClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260D87D61FACD38900AA9FEF /* LogClient.swift */; };
+		260D87DF1FACD38900AA9FEF /* LogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260D87D71FACD38900AA9FEF /* LogHelper.swift */; };
+		260D87E01FACD38900AA9FEF /* LogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260D87D81FACD38900AA9FEF /* LogModel.swift */; };
+		260D87E11FACD38900AA9FEF /* LogQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260D87D91FACD38900AA9FEF /* LogQueue.swift */; };
+		260D87E21FACD38900AA9FEF /* LogSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260D87DA1FACD38900AA9FEF /* LogSender.swift */; };
+		260D87E31FACD38900AA9FEF /* LogSenderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260D87DB1FACD38900AA9FEF /* LogSenderDelegate.swift */; };
+		260D87E41FACD38900AA9FEF /* ReportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260D87DC1FACD38900AA9FEF /* ReportModel.swift */; };
+		260D87E61FACD3BD00AA9FEF /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260D87E51FACD3BD00AA9FEF /* LogManager.swift */; };
+		260D87EA1FACD59500AA9FEF /* LogConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260D87E91FACD59500AA9FEF /* LogConstants.swift */; };
+		260D87ED1FACD63100AA9FEF /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260D87EC1FACD63000AA9FEF /* UIDevice.swift */; };
+		260D87F51FACDAED00AA9FEF /* HockeyAppLogger_UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260D87F41FACDAED00AA9FEF /* HockeyAppLogger_UnitTests.swift */; };
+		260D87FD1FACDB2400AA9FEF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 260D87FC1FACDB2400AA9FEF /* Info.plist */; };
+		47D32F9BE53A2B531D2BA255 /* Pods_HockeyAppLogger_UnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4083B09CB89B2F717BF308 /* Pods_HockeyAppLogger_UnitTests.framework */; };
+		72A79245B8032A1B512DD27D /* Pods_HockeyAppLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D700C6BB45062C9224E3B9D6 /* Pods_HockeyAppLogger.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		260D87F71FACDAED00AA9FEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 260D87B41FACCD2400AA9FEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 260D87BB1FACCD2500AA9FEF;
+			remoteInfo = HockeyAppLogger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1703E49EB4450D3C535A6EE6 /* Pods-HockeyAppLogger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HockeyAppLogger.release.xcconfig"; path = "../CocoaPods/Pods/Target Support Files/Pods-HockeyAppLogger/Pods-HockeyAppLogger.release.xcconfig"; sourceTree = "<group>"; };
+		260D87BC1FACCD2500AA9FEF /* HockeyAppLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HockeyAppLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		260D87D61FACD38900AA9FEF /* LogClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogClient.swift; sourceTree = "<group>"; };
+		260D87D71FACD38900AA9FEF /* LogHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogHelper.swift; sourceTree = "<group>"; };
+		260D87D81FACD38900AA9FEF /* LogModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogModel.swift; sourceTree = "<group>"; };
+		260D87D91FACD38900AA9FEF /* LogQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogQueue.swift; sourceTree = "<group>"; };
+		260D87DA1FACD38900AA9FEF /* LogSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogSender.swift; sourceTree = "<group>"; };
+		260D87DB1FACD38900AA9FEF /* LogSenderDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogSenderDelegate.swift; sourceTree = "<group>"; };
+		260D87DC1FACD38900AA9FEF /* ReportModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportModel.swift; sourceTree = "<group>"; };
+		260D87E51FACD3BD00AA9FEF /* LogManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
+		260D87E91FACD59500AA9FEF /* LogConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogConstants.swift; sourceTree = "<group>"; };
+		260D87EC1FACD63000AA9FEF /* UIDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
+		260D87F21FACDAED00AA9FEF /* HockeyAppLogger.UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HockeyAppLogger.UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		260D87F41FACDAED00AA9FEF /* HockeyAppLogger_UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HockeyAppLogger_UnitTests.swift; sourceTree = "<group>"; };
+		260D87F61FACDAED00AA9FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		260D87FC1FACDB2400AA9FEF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43E7C7AC4286E27A7BAD7446 /* Pods-HockeyAppLogger.UnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HockeyAppLogger.UnitTests.release.xcconfig"; path = "../CocoaPods/Pods/Target Support Files/Pods-HockeyAppLogger.UnitTests/Pods-HockeyAppLogger.UnitTests.release.xcconfig"; sourceTree = "<group>"; };
+		75DBB12E96D3FC3759F9D6C8 /* Pods-HockeyAppLogger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HockeyAppLogger.debug.xcconfig"; path = "../CocoaPods/Pods/Target Support Files/Pods-HockeyAppLogger/Pods-HockeyAppLogger.debug.xcconfig"; sourceTree = "<group>"; };
+		BD771DDA86C60AEEC1414C76 /* Pods-HockeyAppLogger.UnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HockeyAppLogger.UnitTests.debug.xcconfig"; path = "../CocoaPods/Pods/Target Support Files/Pods-HockeyAppLogger.UnitTests/Pods-HockeyAppLogger.UnitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D700C6BB45062C9224E3B9D6 /* Pods_HockeyAppLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HockeyAppLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC4083B09CB89B2F717BF308 /* Pods_HockeyAppLogger_UnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HockeyAppLogger_UnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		260D87B91FACCD2500AA9FEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72A79245B8032A1B512DD27D /* Pods_HockeyAppLogger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		260D87EF1FACDAED00AA9FEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D32F9BE53A2B531D2BA255 /* Pods_HockeyAppLogger_UnitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		260D87B31FACCD2400AA9FEF = {
+			isa = PBXGroup;
+			children = (
+				260D87BE1FACCD2500AA9FEF /* HockeyAppLogger */,
+				260D87F31FACDAED00AA9FEF /* HockeyAppLogger.UnitTests */,
+				260D87BD1FACCD2500AA9FEF /* Products */,
+				276F7D0C9BED993A27F7490C /* Pods */,
+				FF5717977D1D192B08525C4C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		260D87BD1FACCD2500AA9FEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				260D87BC1FACCD2500AA9FEF /* HockeyAppLogger.app */,
+				260D87F21FACDAED00AA9FEF /* HockeyAppLogger.UnitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		260D87BE1FACCD2500AA9FEF /* HockeyAppLogger */ = {
+			isa = PBXGroup;
+			children = (
+				260D87FC1FACDB2400AA9FEF /* Info.plist */,
+				260D87D11FACD38900AA9FEF /* Module */,
+			);
+			path = HockeyAppLogger;
+			sourceTree = "<group>";
+		};
+		260D87D11FACD38900AA9FEF /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				260D87D31FACD38900AA9FEF /* Libraries */,
+				260D87D41FACD38900AA9FEF /* Resources */,
+				260D87D51FACD38900AA9FEF /* Sources */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		260D87D31FACD38900AA9FEF /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		260D87D41FACD38900AA9FEF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		260D87D51FACD38900AA9FEF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				260D87EB1FACD63000AA9FEF /* Extension */,
+				260D87D61FACD38900AA9FEF /* LogClient.swift */,
+				260D87E91FACD59500AA9FEF /* LogConstants.swift */,
+				260D87D71FACD38900AA9FEF /* LogHelper.swift */,
+				260D87E51FACD3BD00AA9FEF /* LogManager.swift */,
+				260D87D81FACD38900AA9FEF /* LogModel.swift */,
+				260D87D91FACD38900AA9FEF /* LogQueue.swift */,
+				260D87DA1FACD38900AA9FEF /* LogSender.swift */,
+				260D87DB1FACD38900AA9FEF /* LogSenderDelegate.swift */,
+				260D87DC1FACD38900AA9FEF /* ReportModel.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		260D87EB1FACD63000AA9FEF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				260D87EC1FACD63000AA9FEF /* UIDevice.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		260D87F31FACDAED00AA9FEF /* HockeyAppLogger.UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				260D87F41FACDAED00AA9FEF /* HockeyAppLogger_UnitTests.swift */,
+				260D87F61FACDAED00AA9FEF /* Info.plist */,
+			);
+			path = HockeyAppLogger.UnitTests;
+			sourceTree = "<group>";
+		};
+		276F7D0C9BED993A27F7490C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75DBB12E96D3FC3759F9D6C8 /* Pods-HockeyAppLogger.debug.xcconfig */,
+				1703E49EB4450D3C535A6EE6 /* Pods-HockeyAppLogger.release.xcconfig */,
+				BD771DDA86C60AEEC1414C76 /* Pods-HockeyAppLogger.UnitTests.debug.xcconfig */,
+				43E7C7AC4286E27A7BAD7446 /* Pods-HockeyAppLogger.UnitTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FF5717977D1D192B08525C4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D700C6BB45062C9224E3B9D6 /* Pods_HockeyAppLogger.framework */,
+				FC4083B09CB89B2F717BF308 /* Pods_HockeyAppLogger_UnitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		260D87BB1FACCD2500AA9FEF /* HockeyAppLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 260D87CE1FACCD2500AA9FEF /* Build configuration list for PBXNativeTarget "HockeyAppLogger" */;
+			buildPhases = (
+				AF26C3D32006B0272077A521 /* [CP] Check Pods Manifest.lock */,
+				260D87B81FACCD2500AA9FEF /* Sources */,
+				260D87B91FACCD2500AA9FEF /* Frameworks */,
+				260D87BA1FACCD2500AA9FEF /* Resources */,
+				6329CD1F10955465AD5413F1 /* [CP] Embed Pods Frameworks */,
+				C8C19D36F4B92CA30A6173E7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HockeyAppLogger;
+			productName = HockeyAppLogger;
+			productReference = 260D87BC1FACCD2500AA9FEF /* HockeyAppLogger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		260D87F11FACDAED00AA9FEF /* HockeyAppLogger.UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 260D87F91FACDAED00AA9FEF /* Build configuration list for PBXNativeTarget "HockeyAppLogger.UnitTests" */;
+			buildPhases = (
+				3A9F59B9982F69A402A3A6DF /* [CP] Check Pods Manifest.lock */,
+				260D87EE1FACDAED00AA9FEF /* Sources */,
+				260D87EF1FACDAED00AA9FEF /* Frameworks */,
+				260D87F01FACDAED00AA9FEF /* Resources */,
+				5793644D4AA31282092B8A05 /* [CP] Embed Pods Frameworks */,
+				B6D68C1886D577565BF64D04 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				260D87F81FACDAED00AA9FEF /* PBXTargetDependency */,
+			);
+			name = HockeyAppLogger.UnitTests;
+			productName = HockeyAppLogger.UnitTests;
+			productReference = 260D87F21FACDAED00AA9FEF /* HockeyAppLogger.UnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		260D87B41FACCD2400AA9FEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Ekassir;
+				TargetAttributes = {
+					260D87BB1FACCD2500AA9FEF = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					260D87F11FACDAED00AA9FEF = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 260D87BB1FACCD2500AA9FEF;
+					};
+				};
+			};
+			buildConfigurationList = 260D87B71FACCD2400AA9FEF /* Build configuration list for PBXProject "HockeyAppLogger" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 260D87B31FACCD2400AA9FEF;
+			productRefGroup = 260D87BD1FACCD2500AA9FEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				260D87BB1FACCD2500AA9FEF /* HockeyAppLogger */,
+				260D87F11FACDAED00AA9FEF /* HockeyAppLogger.UnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		260D87BA1FACCD2500AA9FEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				260D87FD1FACDB2400AA9FEF /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		260D87F01FACDAED00AA9FEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A9F59B9982F69A402A3A6DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HockeyAppLogger.UnitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5793644D4AA31282092B8A05 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../CocoaPods/Pods/Target Support Files/Pods-HockeyAppLogger.UnitTests/Pods-HockeyAppLogger.UnitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6329CD1F10955465AD5413F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../CocoaPods/Pods/Target Support Files/Pods-HockeyAppLogger/Pods-HockeyAppLogger-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ModernDesign/ModernDesign.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftCommons/SwiftCommons.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ModernDesign.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftCommons.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../CocoaPods/Pods/Target Support Files/Pods-HockeyAppLogger/Pods-HockeyAppLogger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF26C3D32006B0272077A521 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HockeyAppLogger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6D68C1886D577565BF64D04 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../CocoaPods/Pods/Target Support Files/Pods-HockeyAppLogger.UnitTests/Pods-HockeyAppLogger.UnitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8C19D36F4B92CA30A6173E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../CocoaPods/Pods/Target Support Files/Pods-HockeyAppLogger/Pods-HockeyAppLogger-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		260D87B81FACCD2500AA9FEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				260D87E61FACD3BD00AA9FEF /* LogManager.swift in Sources */,
+				260D87E11FACD38900AA9FEF /* LogQueue.swift in Sources */,
+				260D87E21FACD38900AA9FEF /* LogSender.swift in Sources */,
+				260D87DF1FACD38900AA9FEF /* LogHelper.swift in Sources */,
+				260D87E01FACD38900AA9FEF /* LogModel.swift in Sources */,
+				260D87ED1FACD63100AA9FEF /* UIDevice.swift in Sources */,
+				260D87E31FACD38900AA9FEF /* LogSenderDelegate.swift in Sources */,
+				260D87DE1FACD38900AA9FEF /* LogClient.swift in Sources */,
+				260D87E41FACD38900AA9FEF /* ReportModel.swift in Sources */,
+				260D87EA1FACD59500AA9FEF /* LogConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		260D87EE1FACDAED00AA9FEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				260D87F51FACDAED00AA9FEF /* HockeyAppLogger_UnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		260D87F81FACDAED00AA9FEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 260D87BB1FACCD2500AA9FEF /* HockeyAppLogger */;
+			targetProxy = 260D87F71FACDAED00AA9FEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		260D87CC1FACCD2500AA9FEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		260D87CD1FACCD2500AA9FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		260D87CF1FACCD2500AA9FEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75DBB12E96D3FC3759F9D6C8 /* Pods-HockeyAppLogger.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U958583RQM;
+				INFOPLIST_FILE = HockeyAppLogger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ekassir.company.HockeyAppLogger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		260D87D01FACCD2500AA9FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1703E49EB4450D3C535A6EE6 /* Pods-HockeyAppLogger.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U958583RQM;
+				INFOPLIST_FILE = HockeyAppLogger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ekassir.company.HockeyAppLogger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		260D87FA1FACDAED00AA9FEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD771DDA86C60AEEC1414C76 /* Pods-HockeyAppLogger.UnitTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U958583RQM;
+				INFOPLIST_FILE = HockeyAppLogger.UnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ekassir.company.HockeyAppLogger-UnitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HockeyAppLogger.app/HockeyAppLogger";
+			};
+			name = Debug;
+		};
+		260D87FB1FACDAED00AA9FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43E7C7AC4286E27A7BAD7446 /* Pods-HockeyAppLogger.UnitTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U958583RQM;
+				INFOPLIST_FILE = HockeyAppLogger.UnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Ekassir.company.HockeyAppLogger-UnitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HockeyAppLogger.app/HockeyAppLogger";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		260D87B71FACCD2400AA9FEF /* Build configuration list for PBXProject "HockeyAppLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				260D87CC1FACCD2500AA9FEF /* Debug */,
+				260D87CD1FACCD2500AA9FEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		260D87CE1FACCD2500AA9FEF /* Build configuration list for PBXNativeTarget "HockeyAppLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				260D87CF1FACCD2500AA9FEF /* Debug */,
+				260D87D01FACCD2500AA9FEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		260D87F91FACDAED00AA9FEF /* Build configuration list for PBXNativeTarget "HockeyAppLogger.UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				260D87FA1FACDAED00AA9FEF /* Debug */,
+				260D87FB1FACDAED00AA9FEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 260D87B41FACCD2400AA9FEF /* Project object */;
+}

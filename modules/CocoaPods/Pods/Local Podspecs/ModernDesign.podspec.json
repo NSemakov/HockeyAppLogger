@@ -1,0 +1,45 @@
+{
+  "name": "ModernDesign",
+  "summary": "A collection of useful UI classes common to different iOS projects.",
+  "version": "0.0.1",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "static_framework": true,
+  "authors": {
+    "Roxie Mobile Ltd.": "sales@roxiemobile.com",
+    "Alexander Bragin": "bragin-av@roxiemobile.com",
+    "Denis Kolyasev": "kolyasevda@ekassir.com"
+  },
+  "license": {
+    "type": "BSD-4-Clause",
+    "file": "LICENSE.txt"
+  },
+  "homepage": "https://github.com/roxiemobile/modern-design.ios",
+  "source": {
+    "git": "https://github.com/roxiemobile/modern-design.ios.git",
+    "tag": "v0.0.1"
+  },
+  "preserve_paths": "LICENSE.txt",
+  "pod_target_xcconfig": {
+    "ENABLE_BITCODE": "NO",
+    "SWIFT_VERSION": "4.0"
+  },
+  "default_subspecs": "UI/Extensions",
+  "subspecs": [
+    {
+      "name": "UI",
+      "subspecs": [
+        {
+          "name": "Extensions",
+          "source_files": "modules/RoxieMobile.ModernDesign/UI.Extensions/Module/**/*.{swift,h,m,c,modulemap}",
+          "dependencies": {
+            "SwiftCommons/Core/Lang": [
+
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

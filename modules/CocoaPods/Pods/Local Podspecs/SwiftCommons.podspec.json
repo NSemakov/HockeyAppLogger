@@ -1,0 +1,143 @@
+{
+  "name": "SwiftCommons",
+  "summary": "A collection of useful utility classes common to different iOS projects.",
+  "version": "0.0.1",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "static_framework": true,
+  "authors": {
+    "Roxie Mobile Ltd.": "sales@roxiemobile.com",
+    "Alexander Bragin": "bragin-av@roxiemobile.com"
+  },
+  "license": {
+    "type": "BSD-4-Clause",
+    "file": "LICENSE.txt"
+  },
+  "homepage": "https://github.com/roxiemobile/swift-commons.ios",
+  "source": {
+    "git": "https://github.com/roxiemobile/swift-commons.ios.git",
+    "tag": "v0.0.1"
+  },
+  "preserve_paths": "LICENSE.txt",
+  "pod_target_xcconfig": {
+    "ENABLE_BITCODE": "NO",
+    "SWIFT_VERSION": "4.0"
+  },
+  "default_subspecs": [
+    "Core/Abstractions",
+    "Core/Concurrent",
+    "Core/Data",
+    "Core/Diagnostics",
+    "Core/Extensions",
+    "Core/Lang",
+    "Core/Logging",
+    "Infrastructure/Database"
+  ],
+  "subspecs": [
+    {
+      "name": "Core",
+      "subspecs": [
+        {
+          "name": "Abstractions",
+          "source_files": "modules/RoxieMobile.SwiftCommons/Core.Abstractions/Module/**/*.{swift,h,m,c,modulemap}"
+        },
+        {
+          "name": "Concurrent",
+          "source_files": "modules/RoxieMobile.SwiftCommons/Core.Concurrent/Module/**/*.{swift,h,m,c,modulemap}",
+          "preserve_paths": "modules/RoxieMobile.SwiftCommons/Core.Concurrent/Module/Libraries/module.modulemap",
+          "pod_target_xcconfig": {
+            "SWIFT_INCLUDE_PATHS": "$(PODS_TARGET_SRCROOT)/modules/RoxieMobile.SwiftCommons/Core.Concurrent/**"
+          }
+        },
+        {
+          "name": "Data",
+          "source_files": "modules/RoxieMobile.SwiftCommons/Core.Data/Module/**/*.{swift,h,m,c,modulemap}",
+          "preserve_paths": "modules/RoxieMobile.SwiftCommons/Core.Data/Module/Libraries/module.modulemap",
+          "pod_target_xcconfig": {
+            "SWIFT_INCLUDE_PATHS": "$(PODS_TARGET_SRCROOT)/modules/RoxieMobile.SwiftCommons/Core.Data/**"
+          },
+          "dependencies": {
+            "SwiftCommons/Core/Diagnostics": [
+              "0.0.1"
+            ],
+            "CryptoSwift": [
+              "~> 0.8.0"
+            ]
+          }
+        },
+        {
+          "name": "Diagnostics",
+          "source_files": "modules/RoxieMobile.SwiftCommons/Core.Diagnostics/Module/**/*.{swift,h,m,c,modulemap}",
+          "dependencies": {
+            "SwiftCommons/Core/Concurrent": [
+              "0.0.1"
+            ],
+            "SwiftCommons/Core/Extensions": [
+              "0.0.1"
+            ]
+          }
+        },
+        {
+          "name": "Extensions",
+          "source_files": "modules/RoxieMobile.SwiftCommons/Core.Extensions/Module/**/*.{swift,h,m,c,modulemap}",
+          "dependencies": {
+            "SwiftCommons/Core/Abstractions": [
+              "0.0.1"
+            ],
+            "SwiftCommons/Core/Logging": [
+              "0.0.1"
+            ]
+          }
+        },
+        {
+          "name": "Lang",
+          "source_files": "modules/RoxieMobile.SwiftCommons/Core.Lang/Module/**/*.{swift,h,m,c,modulemap}"
+        },
+        {
+          "name": "Logging",
+          "source_files": "modules/RoxieMobile.SwiftCommons/Core.Logging/Module/**/*.{swift,h,m,c,modulemap}",
+          "dependencies": {
+            "SwiftCommons/Core/Concurrent": [
+              "0.0.1"
+            ],
+            "SwiftCommons/Core/Lang": [
+              "0.0.1"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Infrastructure",
+      "subspecs": [
+        {
+          "name": "Database",
+          "source_files": "modules/RoxieMobile.SwiftCommons/Infrastructure.Database/Module/**/*.{swift,h,m,c,modulemap}",
+          "preserve_paths": "modules/RoxieMobile.SwiftCommons/Infrastructure.Database/Module/Libraries/module.modulemap",
+          "xcconfig": {
+            "GCC_PREPROCESSOR_DEFINITIONS": "$(inherited) SQLITE_HAS_CODEC=1",
+            "OTHER_SWIFT_FLAGS": "$(inherited) -DSQLITE_SWIFT_SQLCIPHER"
+          },
+          "pod_target_xcconfig": {
+            "SWIFT_INCLUDE_PATHS": "$(PODS_TARGET_SRCROOT)/modules/RoxieMobile.SwiftCommons/Infrastructure.Database/**"
+          },
+          "dependencies": {
+            "SwiftCommons/Core/Concurrent": [
+              "0.0.1"
+            ],
+            "SwiftCommons/Core/Extensions": [
+              "0.0.1"
+            ],
+            "CryptoSwift": [
+              "~> 0.8.0"
+            ],
+            "SQLite.swift/SQLCipher": [
+              "~> 0.11.4"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+PODS:
+  - CryptoSwift (0.8.0)
+  - ModernDesign/UI/Extensions (0.0.1):
+    - SwiftCommons/Core/Lang
+  - SwiftCommons/Core/Abstractions (0.0.1)
+  - SwiftCommons/Core/Concurrent (0.0.1)
+  - SwiftCommons/Core/Data (0.0.1):
+    - CryptoSwift (~> 0.8.0)
+    - SwiftCommons/Core/Diagnostics (= 0.0.1)
+  - SwiftCommons/Core/Diagnostics (0.0.1):
+    - SwiftCommons/Core/Concurrent (= 0.0.1)
+    - SwiftCommons/Core/Extensions (= 0.0.1)
+  - SwiftCommons/Core/Extensions (0.0.1):
+    - SwiftCommons/Core/Abstractions (= 0.0.1)
+    - SwiftCommons/Core/Logging (= 0.0.1)
+  - SwiftCommons/Core/Lang (0.0.1)
+  - SwiftCommons/Core/Logging (0.0.1):
+    - SwiftCommons/Core/Concurrent (= 0.0.1)
+    - SwiftCommons/Core/Lang (= 0.0.1)
+
+DEPENDENCIES:
+  - ModernDesign/UI/Extensions (from `https://github.com/roxiemobile/modern-design.ios.git`, branch `sandbox`)
+  - SwiftCommons/Core/Concurrent (from `https://github.com/roxiemobile/swift-commons.ios.git`, branch `sandbox`)
+  - SwiftCommons/Core/Data (from `https://github.com/roxiemobile/swift-commons.ios.git`, branch `sandbox`)
+  - SwiftCommons/Core/Extensions (from `https://github.com/roxiemobile/swift-commons.ios.git`, branch `sandbox`)
+
+EXTERNAL SOURCES:
+  ModernDesign:
+    :branch: sandbox
+    :git: https://github.com/roxiemobile/modern-design.ios.git
+  SwiftCommons:
+    :branch: sandbox
+    :git: https://github.com/roxiemobile/swift-commons.ios.git
+
+CHECKOUT OPTIONS:
+  ModernDesign:
+    :commit: 5916d225c85350630e093c62b9eebfb1a2d3cc2e
+    :git: https://github.com/roxiemobile/modern-design.ios.git
+  SwiftCommons:
+    :commit: 0a09685d019a77972a207f9dbb0dedb37d389cee
+    :git: https://github.com/roxiemobile/swift-commons.ios.git
+
+SPEC CHECKSUMS:
+  CryptoSwift: f81907430ebbe38b8404b4f6fb40f3c576a8755f
+  ModernDesign: 2807a87fc8136a49a071bb1e7ae3376fdebb7676
+  SwiftCommons: c231da391b282c94c54af08f416f75e7a85c9a8b
+
+PODFILE CHECKSUM: 6762d06c3aa545477032e76371a3f9c76db8db37
+
+COCOAPODS: 1.3.1

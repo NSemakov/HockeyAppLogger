@@ -1,0 +1,17 @@
+platform :ios, '8.0'
+use_frameworks!
+
+workspace '../HockeyAppLogger/HockeyAppLogger.xcworkspace'
+
+target 'HockeyAppLogger' do
+  project '../HockeyAppLogger/HockeyAppLogger.xcodeproj'
+
+  pod 'SwiftCommons/Core/Concurrent', :git => 'https://github.com/roxiemobile/swift-commons.ios.git', :branch => 'sandbox'
+  pod 'SwiftCommons/Core/Data', :git => 'https://github.com/roxiemobile/swift-commons.ios.git', :branch => 'sandbox'
+  pod 'SwiftCommons/Core/Extensions', :git => 'https://github.com/roxiemobile/swift-commons.ios.git', :branch => 'sandbox'
+  pod 'ModernDesign/UI/Extensions', git: 'https://github.com/roxiemobile/modern-design.ios.git', branch: 'sandbox', inhibit_warnings: true
+
+  target 'HockeyAppLogger.UnitTests' do
+    inherit! :search_paths
+  end
+end

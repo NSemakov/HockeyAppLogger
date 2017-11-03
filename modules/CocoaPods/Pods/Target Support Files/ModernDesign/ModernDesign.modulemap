@@ -1,0 +1,6 @@
+framework module ModernDesign {
+  umbrella header "ModernDesign-umbrella.h"
+
+  export *
+  module * { export * }
+}
