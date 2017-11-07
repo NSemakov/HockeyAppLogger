@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "260D87BB1FACCD2500AA9FEF"
-               BuildableName = "HockeyAppLogger.app"
+               BuildableName = "libHockeyAppLogger.a"
                BlueprintName = "HockeyAppLogger"
                ReferencedContainer = "container:HockeyAppLogger.xcodeproj">
             </BuildableReference>
@@ -44,7 +44,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "260D87BB1FACCD2500AA9FEF"
-            BuildableName = "HockeyAppLogger.app"
+            BuildableName = "libHockeyAppLogger.a"
             BlueprintName = "HockeyAppLogger"
             ReferencedContainer = "container:HockeyAppLogger.xcodeproj">
          </BuildableReference>
@@ -68,7 +68,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "260D87BB1FACCD2500AA9FEF"
-            BuildableName = "HockeyAppLogger.app"
+            BuildableName = "libHockeyAppLogger.a"
             BlueprintName = "HockeyAppLogger"
             ReferencedContainer = "container:HockeyAppLogger.xcodeproj">
          </BuildableReference>
@@ -87,7 +87,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "260D87BB1FACCD2500AA9FEF"
-            BuildableName = "HockeyAppLogger.app"
+            BuildableName = "libHockeyAppLogger.a"
             BlueprintName = "HockeyAppLogger"
             ReferencedContainer = "container:HockeyAppLogger.xcodeproj">
          </BuildableReference>
